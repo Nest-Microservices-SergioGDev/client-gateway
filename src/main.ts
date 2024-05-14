@@ -19,8 +19,6 @@ async function bootstrap() {
 
   app.useGlobalFilters(new RpcCustomExceptionFilter());
 
-  console.log('Gatito')
-
   await app.listen(envs.port);
 
   logger.log(`Gatewey running on port ${envs.port}`);
