@@ -17,3 +17,9 @@ docker run -d --name nats-server -p 4222:4222 -p 8222:8222 nats
 ```
 docker run -d --name nats-server -p 4222:4222 -p 8222:8222 nats
 ```
+
+## PROD
+Para desplegar en producción hay que generar la imagen ejecutando lo siguiente:
+```
+docker build -f Dockerfile.prod -t client-gateway .
+```
